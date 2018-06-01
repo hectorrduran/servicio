@@ -31,11 +31,16 @@ var mensaje="nada";
 var datos=0;
 
 
-server.connection({
-    host: 'https://apiresthipico.azurewebsites.net',
-    port: 8080
+var server = new Hapi.Server({
+  connections: {
+    routes: {
+      cors: true
+    }
+  }
 });
-connection.connect();
+
+var port = process.env.port || 8080;
+server.connection({port: port});
 
 function status_opciones()
 {  
