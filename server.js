@@ -3,7 +3,7 @@
 const Hapi = require('hapi');
 const MySQL = require('mysql');
 const Joi = require('joi');
-const Bcrypt = require('bcrypt');
+//const Bcrypt = require('bcrypt');
 const bodyparse = require('hapi-bodyparser');
 const Agenda = require('agenda');
 // Create a server with a host and port
@@ -137,8 +137,8 @@ function carreras()
 
 
 server.connection({
-    host: 'localhost',
-    port: 4100
+    host: 'https://apiresthipico.azurewebsites.net',
+    port: 8080
 });
 connection.connect();
 
