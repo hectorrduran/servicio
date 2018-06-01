@@ -7,7 +7,7 @@ const Joi = require('joi');
 const bodyparse = require('hapi-bodyparser');
 const Agenda = require('agenda');
 // Create a server with a host and port
-const server = new Hapi.Server();
+//const server = new Hapi.Server();
 
 var status_jugada;
 var datos_carrera;
