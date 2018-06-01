@@ -25,13 +25,7 @@ var band_matchop=0;
 
 var mensaje="nada";
 
-const connection = MySQL.createConnection({
-    host: "hipicovenezuela.mysql.database.azure.com", 
-    user: "hipicovenezuela@hipicovenezuela", 
-    password: "Hm-281284", 
-    database: "hipismo", 
-    port: 3306
-});
+
 
 
 var datos=0;
