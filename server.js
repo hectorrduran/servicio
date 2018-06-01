@@ -31,6 +31,12 @@ var mensaje="nada";
 var datos=0;
 
 
+server.connection({
+    host: 'https://apiresthipico.azurewebsites.net',
+    port: 8080
+});
+connection.connect();
+
 function status_opciones()
 {  
     connection.query('select * from tstatus_opciones', (error,filas) => {
@@ -132,15 +138,6 @@ function carreras()
   });
 }
 
-
-
-
-
-server.connection({
-    host: 'https://apiresthipico.azurewebsites.net',
-    port: 8080
-});
-connection.connect();
 
 server.route({
     method: 'GET',
